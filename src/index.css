@@ -8,3 +8,10 @@
    --color-tertiary:#F59E0B;
    --color-neutral:#777681
 }
+
+@theme {
+  --tracking-1: 0em;
+  --tracking-2: 0.025em;
+  --tracking-3: 0.05em;
+  --tracking-4: 0.1em;
+}
