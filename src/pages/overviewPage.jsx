@@ -7,14 +7,14 @@ const OverviewPage = () => {
   return (
     <>
         <div className="flex">
-          <div className="block w-8/12 p-2">
+          <div className="block w-8/12 px-10">
             <h4 className="text-primary/80 font-bold text-ld">CURATION</h4> 
             <h2 className="text-xl font-semibold">Active Priorities</h2>
           </div>
 
-          <div className=" flex w-4/12 h-10 m-4 gap-3">
-            <div className="bg-neutral/30 w-2/4 rounded-full p-2 text-center font-semibold text-primary text-sm">5 Pending</div>
-            <div className="bg-secondary/40 w-2/4 rounded-full p-2 text-center font-semibold text-sm">12 Completed</div>
+          <div className=" flex w-4/12 m-4 px-10 gap-3">
+            <div className="bg-neutral/30 rounded-full px-2 py-1 text-center font-semibold text-primary text-sm">5 Pending</div>
+            <div className="bg-secondary/40 rounded-full px-2 py-1 text-center font-semibold text-sm">12 Completed</div>
           </div>
         </div>
 

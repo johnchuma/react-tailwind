@@ -55,7 +55,7 @@ const Sidebar = () => {
                      
                 </div>
 
-                <div className="absolute bottom-0 p-2 w-2/3 bg-primary rounded-md font-bold text-white">+ Create New Task</div>
+                <div className="absolute bottom-3 p-2 w-2/3 bg-primary rounded-md font-bold text-white">+ Create New Task</div>
             </div>
         </>
      );
