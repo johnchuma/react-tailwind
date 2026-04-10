@@ -10,7 +10,7 @@ const Sidebar = () => {
         <>
             <div className="relative w-3/14 h-screen bg-primary/10 p-5">
                 <h2 className="text-primary font-bold text-xl">My Workspace</h2>
-                <p className="text-sm">The Focused Curator</p>
+                <p className="text-sm text-neutral">The Focused Curator</p>
 
                 <div className="space-y-4 mt-10">
                     {
