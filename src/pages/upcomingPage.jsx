@@ -35,6 +35,28 @@ const UpcomingPage = () => {
           </div>
         </div>
 
+        <p>This Weekend<span><hr></hr>March 16 - 17</span></p>
+        <div>
+          <div>
+            <div></div>
+            <h2>Personal Portfolio Revision</h2>
+            <p>helo dcjcdcbhd</p>
+            <div>
+              <div>profiles</div>
+              <div>ratingd</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <div></div>
+            <h2>Rest & Restore</h2>
+            <p>helo dcjcdcbhd</p>
+          </div>
+        </div>
+
+
       </div>
     </>
   )
