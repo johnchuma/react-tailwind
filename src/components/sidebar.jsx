@@ -44,7 +44,7 @@ const Sidebar = () => {
                                     onClick={()=>{
                                         navigate(item.pathname);
                                     }}
-                                    className={`flex justify-start py-2 px-2 items-center space-x-4 
+                                    className={`flex justify-start cursor-pointer py-2 px-2 items-center space-x-4 
                                     ${pathname === item.pathname ? "bg-white text-primary" : "text-neutral"}`}>
                                     {item.icon}
                                     <p className="text-sm font-semibold">{item.name}</p>
