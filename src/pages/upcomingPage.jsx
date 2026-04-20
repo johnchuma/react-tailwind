@@ -1,6 +1,8 @@
-import { PiDotFill, PiDotsThreeOutlineFill } from "react-icons/pi";
+import { PiDotFill, PiDotsThreeOutlineFill, PiFlagFill } from "react-icons/pi";
 import { HiClock, HiOutlineUsers } from "react-icons/hi2";
-import { MdOutlineLink } from "react-icons/md";
+import { MdOutlineLink, MdOutlineAttachment } from "react-icons/md";
+import {RiAddCircleFill} from "react-icons/ri"
+
 
 const UpcomingPage = () => {
   return (
@@ -9,7 +11,7 @@ const UpcomingPage = () => {
         <div className="flex justify-between items-center">
           <div className="">
             <h1 className="text-3xl font-bold">Upcoming</h1>
-            <p className="text-sm text-neutral">Curating your focus for the week ahead.</p>
+            <p className="text-lg text-neutral">Curating your focus for the week ahead.</p>
           </div>
           <div className="bg-blue-200">Calender part</div>
         </div>
@@ -23,11 +25,11 @@ const UpcomingPage = () => {
         <div className="flex justify-between gap-5">
           <div className="bg-white rounded-md border-l-red-800 border-l-5 p-2 space-y-5 py-5">
             <div className="flex justify-between">
-              <p className="text-sm bg-red-300 rounded-full px-2 font-bold text-red-900">URGENT</p>
+              <p className="text-[12px] bg-red-300 rounded-full px-2 py-1 font-bold text-red-900">URGENT</p>
               <PiDotsThreeOutlineFill className="text-neutral/40" />
             </div>
-            <h2 className="font-bold">Quarterly Strategy Alignment</h2>
-            <p className="text-neutral/90 text-sm">Review key performance indicators and adjust growth targets for the final semester.</p>
+            <h2 className="font-bold text-xl">Quarterly Strategy Alignment</h2>
+            <p className="text-neutral/90 text-lg">Review key performance indicators and adjust growth targets for the final semester.</p>
             <div className="flex justify-between">
               <div className="flex gap-4">
                 <HiOutlineUsers className="w-6 h-6 text-primary" />
@@ -41,11 +43,11 @@ const UpcomingPage = () => {
 
           <div className="bg-primary/10 p-2 space-y-5 py-5 rounded-md">
             <div className="flex justify-between">
-              <p className="text-sm bg-green-300 rounded-full px-2 font-bold">INTERNAL</p>
+              <p className="text-[12px] bg-green-300 rounded-full px-2 py-1 font-bold">INTERNAL</p>
               <PiDotsThreeOutlineFill className="text-neutral/40" />
             </div>
-            <h2 className="font-bold">Design System Audit</h2>
-            <p className="text-neutral/90 text-sm">Ensure all shared components align with the Axiom Indigo specifications.</p>
+            <h2 className="font-bold text-xl">Design System Audit</h2>
+            <p className="text-neutral/90 text-lg">Ensure all shared components align with the Axiom Indigo specifications.</p>
             <div className="flex justify-between">
               <div className="bg-white/60 px-2 rounded-full font-semibold text-neutral text-sm">Project: UI refresh</div>
               <div className="flex justify-center items-center ">
@@ -63,24 +65,24 @@ const UpcomingPage = () => {
         </div>
 
         <div className="flex gap-5">
-          <div className="bg-white p-2 space-y-2 rounded-md pb-5">
+          <div className="bg-white p-2 space-y-2 rounded-md pb-5 py-8">
             <div className="flex items-center">
-              <PiDotFill className="text-red-950" />
-              <p className="text-red-950 text-sm font-bold">IN PROGRESS</p>
+              <PiDotFill className="text-red-950 text-lg" />
+              <p className="text-red-950 text-[12px] font-bold">IN PROGRESS</p>
             </div>
-            <h2 className="font-bold text-lg">Personal Portfolio Revision</h2>
-            <p className="text-neutral">Updating the case studies to reflect the new 
+            <h2 className="font-bold text-xl">Personal Portfolio Revision</h2>
+            <p className="text-neutral text-lg">Updating the case studies to reflect the new 
               curated approach to digital design and user narrative.</p>
             <div className="flex gap-5 items-center">
-              <div className="bg-primary/20 px-2 py-1 font-bold rounded-md text-sm text-primary">Continue Focus</div>
-              <p className="italic text-sm text-neutral">Next step: Finalize mobile views</p>
+              <div className="bg-primary/10 px-2 py-1 font-bold rounded-md text-sm text-primary">Continue Focus</div>
+              <p className="italic text-lg text-neutral">Next step: Finalize mobile views</p>
             </div>
           </div>
         
           <div className="bg-primary/10 rounded-md text-center pt-20">
             <div></div>
-            <h2 className="font-bold">Rest & Restore</h2>
-            <p className="text-sm">No tasks scheduled for Sunday afternoon.</p>
+            <h2 className="font-bold text-xl">Rest & Restore</h2>
+            <p className="text-lg text-neutral">No tasks scheduled for Sunday afternoon.</p>
           </div>
         </div>
 
@@ -89,29 +91,36 @@ const UpcomingPage = () => {
           <hr className="w-[75%] text-neutral/40 font-bold"></hr>
           <span className="text-neutral/40 text-sm font-bold">From March 18</span>
         </div>
-        <div>
-          <div>
-            <div></div>
-            <h2>Client Onboarding Hellos Corp</h2>
-            <p>helo dcjcdcbhd</p>
-            <div>
-              <div>like</div>
-              <div>dislike</div>
+        
+        <div className="flex justify-between rounded-md bg-primary/10 p-5">
+          <div className="flex gap-5">
+            <div className="bg-white px-4 py-4 rounded-md text-primary font-bold">18</div>
+            <div className="block">
+              <h1 className="font-bold text-xl">Client Onboarding: Helios Corp</h1>
+              <p className="text-lg text-neutral">Setup workspace, slack channels and initial project timeline.</p>
             </div>
           </div>
-        
-          <div>
-            <div></div>
-            <h2>Product Launch Prep</h2>
-            <p>helo dcjcdcbhd</p>
-            <div>
-              <div>like</div>
-              <div>dislike</div>
-            </div>
+          <div className="flex gap-5 text-neutral font-bold items-center justify-center">
+            <MdOutlineAttachment className="text-2xl" />
+            <PiFlagFill className="text-3xl" />
           </div>
         </div>
-
+        
+        <div className="flex justify-between rounded-md bg-primary/10 p-5">
+          <div className="flex gap-5">
+            <div className="bg-white px-4 py-4 rounded-md text-primary font-bold">20</div>
+            <div className="block">
+              <h1 className="font-bold text-xl">Product Launch Prep</h1>
+              <p className="text-lg text-neutral">Final review of social media assets and email marketing sequence</p>
+            </div>
+          </div>
+          <div className="flex gap-5 text-neutral font-bold items-center justify-center">
+            <HiOutlineUsers className="text-2xl" />
+            <PiFlagFill className="text-3xl" />
+          </div>
+        </div>
       </div>
+      <div className="flex justify-end items-end pt-5"><RiAddCircleFill className="text-primary text-5xl" /></div>
     </>
   )
 };
