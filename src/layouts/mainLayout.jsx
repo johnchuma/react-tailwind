@@ -1,18 +1,26 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar";
 import Sidebar from "../components/sidebar";
+import { useState } from "react";
 
 const MainLayout = () => {
-  return (
-    <div className="flex bg-white w-full">
-      <Sidebar />
-      <div className="w-11/14 bg-[#FCF8FF]">
-        <Navbar />
-        <div className="pt-24 px-12">
+  const [menu, setMenu] = useState(false)
+  return (<>
+    <div className="flex relative bg-white w-full">
+      <Sidebar menu ={menu} />
+      <div className="flex-1 bg-[#FCF8FF]">
+        <Navbar menu={menu} setMenu ={setMenu} />
+        <div className="pt-25 px-4 lg:px-12">
           <Outlet />
         </div>
       </div>
     </div>
+    {menu && (
+        <div
+          onClick={() => setMenu(false)}
+          className="fixed inset-0 bg-black/80 z-40 lg:hidden"
+        />
+      )}</>
   );
 };
 

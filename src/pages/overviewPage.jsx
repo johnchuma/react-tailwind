@@ -6,19 +6,19 @@ import { RxDotFilled } from "react-icons/rx";
 const OverviewPage = () => {
   return (
     <>
-        <div className="flex">
-          <div className="block w-8/12 px-10">
-            <h4 className="text-primary/80 font-bold text-ld">CURATION</h4> 
-            <h2 className="text-xl font-semibold">Active Priorities</h2>
+        <div className="flex lg:gap-15">
+          <div className="block lg:w-8/12 px-5 lg:px-10">
+            <h4 className="text-primary/80 font-bold text-sm lg:text-lg">CURATION</h4> 
+            <h2 className="lg:text-xl text-sm font-semibold">Active Priorities</h2>
           </div>
 
-          <div className=" flex w-4/12 m-4 px-10 gap-3">
-            <div className="bg-neutral/30 rounded-full px-2 py-1 text-center font-semibold text-primary text-sm">5 Pending</div>
-            <div className="bg-secondary/40 rounded-full px-2 py-1 text-center font-semibold text-sm">12 Completed</div>
+          <div className=" flex lg:w-4/12 m-4 gap-2 lg:gap-5">
+            <div className="bg-neutral/30 rounded-full px-2 py-1 text-center inline font-semibold text-primary text-[10px] lg:text-sm">5 Pending</div>
+            <div className="bg-secondary/40 rounded-full px-2 py-1 text-center font-semibold text-[10px] lg:text-sm">12 Completed</div>
           </div>
         </div>
 
-        <div className="p-5">
+        <div className="lg:p-5">
 
           <div className="flex bg-white space-x-5 m-5 px-5 py-2 rounded-md">
             <input type="checkbox" className="scale-200" />

@@ -22,7 +22,7 @@ const UpcomingPage = () => {
           <span className="text-neutral/40 text-sm font-bold">March 13</span>
         </div>
 
-        <div className="flex justify-between gap-5">
+        <div className="lg:flex block space-y-10 justify-between gap-5">
           <div className="bg-white rounded-md border-l-red-800 border-l-5 p-2 space-y-5 py-5">
             <div className="flex justify-between">
               <p className="text-[12px] bg-red-300 rounded-full px-2 py-1 font-bold text-red-900">URGENT</p>
@@ -64,7 +64,7 @@ const UpcomingPage = () => {
           <span className="text-neutral/40 text-sm font-bold">March 16-17</span>
         </div>
 
-        <div className="flex gap-5">
+        <div className="lg:flex block space-y-10 lg:gap-5">
           <div className="bg-white p-2 space-y-2 rounded-md pb-5 py-8">
             <div className="flex items-center">
               <PiDotFill className="text-red-950 text-lg" />
@@ -75,7 +75,7 @@ const UpcomingPage = () => {
               curated approach to digital design and user narrative.</p>
             <div className="flex gap-5 items-center">
               <div className="bg-primary/10 px-2 py-1 font-bold rounded-md text-sm text-primary">Continue Focus</div>
-              <p className="italic text-lg text-neutral">Next step: Finalize mobile views</p>
+              <p className="italic text-lg font-semibold text-neutral">Next step: Finalize mobile views</p>
             </div>
           </div>
         
