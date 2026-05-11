@@ -57,7 +57,7 @@ const Sidebar = ({menu}) => {
                     }
                      
                 </div>
-
+                    
                 <div className="absolute bottom-3 py-2 px-1 lg:w-2/3 bg-primary border border-white rounded-md font-bold text-white">+ Create New Task</div>
             </div>
             
